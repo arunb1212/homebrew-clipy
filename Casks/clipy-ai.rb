@@ -38,13 +38,13 @@ cask "clipy-ai" do
 
   # REPLACE with your real download URL. Homebrew needs a URL that resolves per
   # release — either the versioned filename below, or a stable "latest" path.
-  url "https://REPLACE-WITH-YOUR-SITE/download/Clipy-#{version}.dmg"
+  url "https://www.tryclipy.online/downloads/Clipy-1.1.1.dmg"
   name "Clipy"
   desc "Clipboard manager with snippet expansion and AI transforms"
-  homepage "https://REPLACE-WITH-YOUR-SITE/"
+  homepage "https://www.tryclipy.online/"
 
   # Matches LSMinimumSystemVersion (13.0) in Resources/Info.plist.
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Clipy.app"
 
