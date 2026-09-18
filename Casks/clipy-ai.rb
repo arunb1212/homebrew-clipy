@@ -34,7 +34,7 @@
 
 cask "clipy-ai" do
   version "1.1.1"
-  sha256 "f9bfd092c466c0f066c212e05fa822b094b4e2af45c3668feef0dcdaff9cbabd"
+  sha256 "caa1dd25dce5b034372c41540366e9d1f4431641cfa5a972415386630edfc067"
 
   # REPLACE with your real download URL. Homebrew needs a URL that resolves per
   # release — either the versioned filename below, or a stable "latest" path.
