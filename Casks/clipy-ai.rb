@@ -33,17 +33,23 @@
 # unused token — then users get a plain `brew install --cask <token>` with no tap.
 
 cask "clipy-ai" do
-  version "1.1.1"
-  sha256 "caa1dd25dce5b034372c41540366e9d1f4431641cfa5a972415386630edfc067"
+  version "1.1.2"
+  sha256 "3bfcd0f38ebe799a07822912d8e7d8158f0d042d5f606ce5423b8b3a6cf7a774"
 
-  # REPLACE with your real download URL. Homebrew needs a URL that resolves per
-  # release — either the versioned filename below, or a stable "latest" path.
-  url "https://www.tryclipy.online/downloads/Clipy-1.1.1.dmg"
+  # Served from the site (Vercel). The filename carries the version, so a new
+  # release needs no edit here beyond `version` and `sha256` — upload
+  # Clipy-X.Y.Z.dmg to the site's downloads folder and bump both.
+  #
+  # The same file is mirrored on GitHub Releases as a backup:
+  #   https://github.com/arunb1212/homebrew-clipy/releases/download/v#{version}/Clipy-#{version}.dmg
+  url "https://www.tryclipy.online/downloads/Clipy-#{version}.dmg"
   name "Clipy"
   desc "Clipboard manager with snippet expansion and AI transforms"
   homepage "https://www.tryclipy.online/"
 
   # Matches LSMinimumSystemVersion (13.0) in Resources/Info.plist.
+  # Use the symbol form — the string comparison form ("&gt;= :ventura") is
+  # deprecated and warns on every brew command for this tap.
   depends_on macos: :ventura
 
   app "Clipy.app"
