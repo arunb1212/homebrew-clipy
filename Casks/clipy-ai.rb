@@ -33,8 +33,8 @@
 # unused token — then users get a plain `brew install --cask <token>` with no tap.
 
 cask "clipy-ai" do
-  version "1.1.2"
-  sha256 "3bfcd0f38ebe799a07822912d8e7d8158f0d042d5f606ce5423b8b3a6cf7a774"
+  version "1.1.3"
+  sha256 "158d7a1f3c88a1704ce0e87ae0a358fc9cd67e554d874156d06aebe50eb44d68"
 
   # Served from the site (Vercel). The filename carries the version, so a new
   # release needs no edit here beyond `version` and `sha256` — upload
